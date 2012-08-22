@@ -19,6 +19,9 @@
 - (void) processBarCode:(NSString *) barCode{
     self.barcodeValue.text = barCode;
 }
+- (IBAction)clearBarcode:(UIButton *)sender {
+    self.barcodeValue.text = @"";
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
